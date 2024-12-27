@@ -1,0 +1,13 @@
+<div class="homeWrap">
+  <p>home component</p>
+  <app-greeting [message]="homeMessage()" />
+  <app-counter />
+  <input
+    placeholder="type something..."
+    type="text"
+    (keyup)="keyUpHandler($event)"
+  />
+  <p>
+    value:<span>{{ inputValue() }}</span>
+  </p>
+</div>
